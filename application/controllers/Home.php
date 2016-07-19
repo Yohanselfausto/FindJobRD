@@ -10,6 +10,10 @@ function __construct()
 
 public function index()
 {
+    $this->load->view('Templates/Header.php');
     $this->load->view('Templates/home');
+    $this->load->view('Templates/Footer.php');
+    $this->load->view('Templates/Login.php');
+
 }
 }
