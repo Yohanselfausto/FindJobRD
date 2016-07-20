@@ -16,30 +16,26 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <link rel="shortcut icon" href="assets/findjobRDicono.ico" type="image/x-icon">
-        <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="<?php echo base_url();?>/assets/findjobRDicono.ico" type="image/x-icon">
+        <link rel="icon" href="<?php echo base_url();?>/assets/favicon.ico" type="image/x-icon">
 
-        <link rel="stylesheet" href="assets/css/normalize.css">
-        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-        <link rel="stylesheet" href="assets/css/fontello.css">
-        <link rel="stylesheet" href="assets/css/animate.css">
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/owl.carousel.css">
-        <link rel="stylesheet" href="assets/css/owl.theme.css">
-        <link rel="stylesheet" href="assets/css/owl.transitions.css">
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="assets/css/responsive.css">
-        <script src="assets/js/vendor/modernizr-2.6.2.min.js"></script>
+        <link rel="stylesheet" href="<?php echo base_url();?>/assets/css/normalize.css">
+        <link rel="stylesheet" href="<?php echo base_url();?>/assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="<?php echo base_url();?>/assets/css/fontello.css">
+        <link rel="stylesheet" href="<?php echo base_url();?>/assets/css/animate.css">
+        <link rel="stylesheet" href="<?php echo base_url();?>/assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="<?php echo base_url();?>/assets/css/owl.carousel.css">
+        <link rel="stylesheet" href="<?php echo base_url();?>/assets/css/owl.theme.css">
+        <link rel="stylesheet" href="<?php echo base_url();?>/assets/css/owl.transitions.css">
+        <link rel="stylesheet" href="<?php echo base_url();?>/assets/css/style.css">
+        <link rel="stylesheet" href="<?php echo base_url();?>/assets/css/responsive.css">
+        <script src="<?php echo base_url();?>/assets/js/vendor/modernizr-2.6.2.min.js"></script>
         <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 
     </head>
     <body>
 
-        <div id="preloader">
-            <div id="status">&nbsp;</div>
-        </div>
-        <!-- Body content -->
 
         <div class="header-connect">
             <div class="container">
@@ -75,18 +71,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#"><img src="assets/img/findjobRDLogo.png" alt=""></a>
+              <a class="navbar-brand" href=""><img src="<?php echo base_url();?>/assets/img/findjobRDLogo.png" alt=""></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <div class="button navbar-right">
-                  <button class="navbar-btn nav-button wow bounceInRight login" data-wow-delay="0.8s">Iniciar Sesión</button>
+                  <a class="navbar-btn nav-button wow bounceInRight login" data-wow-delay="0.8s" href="<?php echo base_url('/home/login'); ?>">Iniciar Sesión</a>
                   <button class="navbar-btn nav-button wow fadeInRight" data-wow-delay="0.6s">Registrarse</button>
               </div>
               <ul class="main-nav nav navbar-nav navbar-right">
                 <li class="wow fadeInDown" data-wow-delay="0s"><a class="active" href="#">Inicio</a></li>
-                <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="#">Empleos</a></li>
+                <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="application/views/Templates/Login">Empleos</a></li>
                 <li class="wow fadeInDown" data-wow-delay="0.2s"><a href="#">Currículums</a></li>
                 <li class="wow fadeInDown" data-wow-delay="0.3s"><a href="#">Servicios</a></li>
                 <li class="wow fadeInDown" data-wow-delay="0.4s"><a href="#">Contacto</a></li>
