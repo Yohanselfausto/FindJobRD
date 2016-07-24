@@ -29,6 +29,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <link rel="stylesheet" href="<?php echo base_url();?>/assets/css/owl.transitions.css">
         <link rel="stylesheet" href="<?php echo base_url();?>/assets/css/style.css">
         <link rel="stylesheet" href="<?php echo base_url();?>/assets/css/responsive.css">
+        <link rel="stylesheet" href="<?php echo base_url();?>/assets/css/login.css">
         <script src="<?php echo base_url();?>/assets/js/vendor/modernizr-2.6.2.min.js"></script>
         <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
@@ -71,7 +72,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href=""><img src="<?php echo base_url();?>/assets/img/findjobRDLogo.png" alt=""></a>
+              <a class="navbar-brand" href="<?php echo base_url('/home'); ?>"><img src="<?php echo base_url();?>/assets/img/findjobRDLogo.png" alt=""></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -81,11 +82,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                   <button class="navbar-btn nav-button wow fadeInRight" data-wow-delay="0.6s">Registrarse</button>
               </div>
               <ul class="main-nav nav navbar-nav navbar-right">
-                <li class="wow fadeInDown" data-wow-delay="0s"><a class="active" href="#">Inicio</a></li>
-                <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="application/views/Templates/Login">Empleos</a></li>
-                <li class="wow fadeInDown" data-wow-delay="0.2s"><a href="#">Currículums</a></li>
+                <li class="wow fadeInDown" data-wow-delay="0s"><a class="active" href="<?php echo base_url('/Home'); ?>">Inicio</a></li>
+                <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="<?php echo base_url('/Home/Empleos'); ?>">Empleos</a></li>
+                <li class="wow fadeInDown" data-wow-delay="0.2s"><a href="<?php echo base_url('/Home/Curriculum'); ?>">Currículums</a></li>
                 <li class="wow fadeInDown" data-wow-delay="0.3s"><a href="#">Servicios</a></li>
-                <li class="wow fadeInDown" data-wow-delay="0.4s"><a href="#">Contacto</a></li>
+                <li class="wow fadeInDown" data-wow-delay="0.4s"><a href="<?php echo base_url('/Home/Contacto'); ?>">Contacto</a></li>
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->

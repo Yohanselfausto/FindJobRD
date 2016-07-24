@@ -1,14 +1,15 @@
 <div class="footer-area">
     <div class="container">
         <div class="row footer">
-            <div class="col-md-4">
+            <div class="col-md">
                 <div class="single-footer">
                     <h4>Información</h4>
                     <div class="footer-links">
                         <ul class="list-unstyled">
                             <li><a href="">Nosotros</a></li>
                             <li><a href="" class="active">Servicios</a></li>
-                            <li><a href="">Contactanos</a></li>
+                            <li><a href="">Ayuda</a></li>
+                            <li><a href="<?php echo base_url('/home/Contacto'); ?>">Contacto</a></li>
                         </ul>
                     </div>
                 </div>
