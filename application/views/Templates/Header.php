@@ -78,14 +78,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <div class="button navbar-right">
-                  <a class="navbar-btn nav-button wow bounceInRight login" data-wow-delay="0.8s" href="<?php echo base_url('/home/login'); ?>">Iniciar Sesión</a>
-                  <button class="navbar-btn nav-button wow fadeInRight" data-wow-delay="0.6s">Registrarse</button>
+                  <a class="navbar-btn nav-button wow bounceInRight login" data-wow-delay="0.8s" href="<?php echo base_url('/Login/login'); ?>">Iniciar Sesión</a>
+                  <a class="navbar-btn nav-button wow fadeInRight" data-wow-delay="0.6s" href="<?php echo base_url('/Formularios/RegistroEmpresa'); ?>">Registrarse</a>
               </div>
               <ul class="main-nav nav navbar-nav navbar-right">
                 <li class="wow fadeInDown" data-wow-delay="0s"><a class="active" href="<?php echo base_url('/Home'); ?>">Inicio</a></li>
                 <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="<?php echo base_url('/Home/Empleos'); ?>">Empleos</a></li>
                 <li class="wow fadeInDown" data-wow-delay="0.2s"><a href="<?php echo base_url('/Home/Curriculum'); ?>">Currículums</a></li>
-                <li class="wow fadeInDown" data-wow-delay="0.3s"><a href="#">Servicios</a></li>
+                <li class="wow fadeInDown" data-wow-delay="0.3s"><a href="<?php echo base_url('/Home/Servicios'); ?>">Servicios</a></li>
                 <li class="wow fadeInDown" data-wow-delay="0.4s"><a href="<?php echo base_url('/Home/Contacto'); ?>">Contacto</a></li>
               </ul>
             </div><!-- /.navbar-collapse -->

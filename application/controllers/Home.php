@@ -16,9 +16,15 @@ public function index()
 
 }
 
-public function Login(){
+public function Nosotros(){
   $this->load->view('Templates/Header');
-  $this->load->view('Templates/Login');
+  $this->load->view('Templates/Nosotros');
+  $this->load->view('Templates/Footer');
+}
+
+public function Servicios(){
+  $this->load->view('Templates/Header');
+  $this->load->view('Templates/Servicios');
   $this->load->view('Templates/Footer');
 }
 
@@ -37,6 +43,12 @@ public function Empleos(){
 public function Curriculum(){
   $this->load->view('Templates/Header');
   $this->load->view('Templates/Curriculum');
+  $this->load->view('Templates/Footer');
+}
+
+public function Ayuda(){
+  $this->load->view('Templates/Header');
+  $this->load->view('Templates/Ayuda');
   $this->load->view('Templates/Footer');
 }
 }

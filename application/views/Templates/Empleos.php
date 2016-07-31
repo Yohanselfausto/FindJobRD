@@ -1,5 +1,5 @@
 <div class="search-form wow pulse" data-wow-delay="0.8s">
-<form action="" class=" form-inline">
+<form action="" align="center" class=" form-inline">
     <div class="form-group">
         <input type="text" class="form-control" placeholder="Palabra Clave">
     </div>

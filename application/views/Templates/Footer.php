@@ -6,10 +6,10 @@
                     <h4>Información</h4>
                     <div class="footer-links">
                         <ul class="list-unstyled">
-                            <li><a href="">Nosotros</a></li>
-                            <li><a href="" class="active">Servicios</a></li>
-                            <li><a href="">Ayuda</a></li>
-                            <li><a href="<?php echo base_url('/home/Contacto'); ?>">Contacto</a></li>
+                            <li><a href="<?php echo base_url('/Home/Nosotros'); ?>">Nosotros</a></li>
+                            <li><a href="<?php echo base_url('/Home/Servicios'); ?>" class="active">Servicios</a></li>
+                            <li><a href="<?php echo base_url('/Home/Ayuda'); ?>">Ayuda</a></li>
+                            <li><a href="<?php echo base_url('/Home/Contacto'); ?>">Contacto</a></li>
                         </ul>
                     </div>
                 </div>
