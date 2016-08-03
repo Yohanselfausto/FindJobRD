@@ -1,3 +1,7 @@
+</br>
+<h3 align="center">Ponte en contacto con nosotros, escribenos...<h3/>
+ <h4 align="center">Para dudas puedes llamar a nuestra oficina principal </h4>
+<p align="center"> 809-541-4547 </p>
 <form class="form-horizontal">
   <fieldset>
     <legend>Escribenos</legend>

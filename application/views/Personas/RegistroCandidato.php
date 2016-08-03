@@ -1,3 +1,30 @@
+<?php
+$completo = true; // variable que verifica si el formulario esta completo
+if(isset($_POST['NombreUsuario'])){
+  // donde pones el -nombre- de nombreempresa o no me acuerdo como se llamaba en $_POST['nombre']
+  // verifica cada elemento enviado y si hay uno vacio entonces cambia el valor de la variable
+  foreach($_POST as $elemento){
+    if($elemento == ""){
+      $completo = false;
+    }
+  }
+  if($completo){
+    // Avisas que los datos se han guardado
+    echo "<script>alert('Se ha registrado correctamente')</script>";
+    // aqui codigo de insertar datos en una tabla
+
+    // aqui codigo de insertar datos en la otra
+
+  } else {
+    // Aqui avisas se requiere que el formmulario este completo esto incluira los select
+    // si tu escribes a cada option un valor y el primero le dejas el valor "" o eso creo
+    echo"<script>alert('Por Favor llene todos los datos del formulario')</script>";
+  }
+}
+?>
+
+
+
 <div class="container">
       <h3 style="color:black">Registrar Usuario</h3>
       <div class="row">
@@ -84,3 +111,5 @@
         </div>
       </form>
     </div>
+<br/>
+<br/>

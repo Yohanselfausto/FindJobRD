@@ -1,116 +1,152 @@
-<div class="container">
-      <h3 style="color:black">Registrar Empresa</h3>
-      <div class="row">
+
+<?php
+$completo = true; // variable que verifica si el formulario esta completo
+if(isset($_POST['nombreempresa'])){
+  // donde pones el -nombre- de nombreempresa o no me acuerdo como se llamaba en $_POST['nombre']
+  // verifica cada elemento enviado y si hay uno vacio entonces cambia el valor de la variable
+  foreach($_POST as $elemento){
+    if($elemento == ""){
+      $completo = false;
+    }
+  }
+  if($completo){
+    // Avisas que los datos se han guardado
+    echo "<script>alert('Se ha registrado correctamente')</script>";
+    // aqui codigo de insertar datos en una tabla
+
+    // aqui codigo de insertar datos en la otra
+
+  } else {
+    // Aqui avisas se requiere que el formmulario este completo esto incluira los select
+    // si tu escribes a cada option un valor y el primero le dejas el valor "" o eso creo
+    echo"<script>alert('Por Favor llene todos los datos del formulario')</script>";
+  }
+}
+?>
+
+
+
+
+</br>
+</br>
+</br>
+
+<h3 align="center"> <b> Datos de la empresa <b/> </h3>
+</br>
+
+<div class="row">
 
       <form action="" method="post">
-        <div class="col-md-12" >
-          <div class="col-md-12">
+        <div  class="col-md-12" >
 
-            <div class="form-group input-group" >
-              <span style="color: #2E9AFE"class="input-group-addon">ID:</span>
-              <input type="text" class="form-control" name="UsuarioID" readonly>
-            </div>
+          <div  class="col-md-12">
 
-            <div class="form-group input-group">
+            <div  class="form-group input-group">
               <span class="input-group-addon">Nombre:</span>
-              <input class="form-control" name="Nombre" required="Nombre">
+              <input class="form-control" name="nombreempresa" required="Nombre">
             </div>
 
             <div class="form-group input-group">
-              <span class="input-group-addon">RNC:</span>
-              <input class="form-control" name="RNC" required="RNC">
+              <span class="input-group-addon">RNC</span>
+              <input type="text"  class="form-control" name="rnc" required="rnc">
             </div>
 
             <div class="form-group input-group">
-              <span class="input-group-addon">Actividad:</span>
-              <input class="form-control" name="Actividad" required="Actividad">
+              <span class="input-group-addon">Actividad</span>
+              <input type="text" class="form-control" name="actividad" required="actividad" >
             </div>
 
             <div class="form-group input-group">
-              <span class="input-group-addon">Descripción</span>
-              <input class="form-control" name="Nombre" required="Nombre">
+              <span class="input-group-addon">Ubicacion</span>
+              <input type="text" class="form-control" name="ubicacion" required="ubicacion">
             </div>
-
             <div class="form-group input-group">
-              <span class="input-group-addon">Ubicación:</span>
-              <input class="form-control" name="Ubicacion" required="Ubicacion">
-            </div>
+              <span class="input-group-addon">Descripcion</span>
+              <input type="text" class="form-control" name="descripcion" required="descripcion">
+              <div class="input-group col-sm-3">
 
-            <div class="form-group input-group">
-              <span class="input-group-addon">País:</span>
-              <select class="list-group-item" name="Pais">
-                <option value="">Seleccione País</option>
 
-              </select>
-            </div>
-
-            <div class="form-group input-group">
-              <span class="input-group-addon">Ciudad:</span>
-              <select class="list-group-item" name="Ciudad">
-                <option value="">Seleccione Ciudad</option>
-
-              </select>
-            </div>
-
-            <div class="form-group input-group">
-              <span class="input-group-addon">Dirección:</span>
-              <input type="text" class="form-control" name="Direccion" required="Direccion">
-            </div>
-
-            <div class="form-group input-group">
-              <span class="input-group-addon">Código Postal:</span>
-              <input type="text" class="form-control" name="Direccion" required="Direccion">
-            </div>
-
-            <div class="form-group input-group">
-              <span class="input-group-addon">Telefono:</span>
-              <input type="text" class="form-control" name="Telefono" required="Telefono">
             </div>
               </div>
 
-              <div class="container">
-                    <h3 style="color:black">Datos Representante</h3>
-                    <div class="row">
+                  </div>
 
-                  <div class="form-group input-group" >
-                        <span style="color: #2E9AFE"class="input-group-addon">ID:</span>
-                        <input type="text" class="form-control" name="UsuarioID" readonly>
-                    </div>
+<div class="input-group col-sm-3">
+ <span  class="input-group-addon"><span>Pais</span></span>
+ <select class="form-control" name="pais">
+ <option>Selecciona un pais</option>
+ </select>
+ </div>
+</br>
+<div class="input-group col-sm-3">
+ <span class="input-group-addon"><span>Ciudad</span></span>
+ <select class="form-control" name="ciudad">
+ <option>Selecciona una ciudad</option>
+ </select>
 
-              <div class="form-group input-group">
-                <span class="input-group-addon">Email:</span>
-                <input type="text" class="form-control" name="Email" required="Email">
+
+
+ </div>
+
+
+
+        </div>
+
+      </br>
+      <h3 align="center"> <b> Representante <b/> </h3>
+
+
+      </br>
+
+
+      <form action="" method="post">
+        <div  class="col-md-12" >
+
+          <div  class="col-md-6">
+
+            <div  class="form-group input-group">
+              <span class="input-group-addon">Nombre</span>
+              <input class="form-control" name="nombrerepresentante" required="Nombre">
+            </div>
+
+            <div class="form-group input-group">
+              <span class="input-group-addon">Apellido</span>
+              <input type="text"  class="form-control" name="apellido" required="Apellido">
+            </div>
+
+            <div class="form-group input-group">
+              <span class="input-group-addon">Contraseña</span>
+              <input type="password" class="form-control" name="contraseña" required="contrasenia" >
+            </div>
+
+            <div class="form-group input-group">
+              <span class="input-group-addon">Empresa</span>
+              <input type="text" class="form-control" name="empresa" required="empresa">
+            </div>
+            <div class="form-group input-group">
+              <span class="input-group-addon">Email</span>
+              <input type="text" class="form-control" name="descripcion" required="email">
+            </div>
+
+            <div class="form-group input-group">
+              <span class="input-group-addon">Username</span>
+              <input type="text" class="form-control" name="username" required="username">
+            </div>
+
+          <div class="form-group input-group">
+              <span class="input-group-addon">Telefono</span>
+              <input type="text" class="form-control" name="telefono" >
+            </div>
               </div>
 
-              <div class="form-group input-group">
-                <span class="input-group-addon">Usuario:</span>
-              <input type="text" class="form-control" name="NombreUsuario" required="NombreUsuario">
                   </div>
 
-              <div class="form-group input-group">
-               <span class="input-group-addon">Contraseña:</span>
-              <input type="text" class="form-control" name="Contrasena" required="Contrasena">
-                  </div>
-
-                  <div class="form-group input-group">
-                    <span class="input-group-addon">Nombres:</span>
-                    <input class="form-control" name="Nombre" required="Nombre">
-                  </div>
-
-                  <div class="form-group input-group">
-                    <span class="input-group-addon">Apellidos:</span>
-                    <input type="text" class="form-control" name="Apellido" required="Apellido">
-                  </div>
-
-                  <div class="form-group input-group">
-                    <span class="input-group-addon">Cedula:</span>
-                    <input type="text" class="form-control" name="Cedula" required="Cedula" >
-                  </div>
-
-            <div class="text-center">
-              <button type="submit" class="btn btn-primary">Guardar</button>
-            </div>
-        </div>
-        </div>
       </form>
+
+<div class="text-center">
+          <button type="submit" class="btn btn-primary hvr-buzz" > Registrarse  </button>
+            </div>
     </div>
+</br>
+</br>
+</br>

@@ -79,7 +79,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <div class="button navbar-right">
                   <a class="navbar-btn nav-button wow bounceInRight login" data-wow-delay="0.8s" href="<?php echo base_url('/Login/login'); ?>">Iniciar Sesión</a>
-                  <a class="navbar-btn nav-button wow fadeInRight" data-wow-delay="0.6s" href="<?php echo base_url('/Formularios/RegistroEmpresa'); ?>">Registrarse</a>
+                  <a class="navbar-btn nav-button wow fadeInRight" data-wow-delay="0.6s" href="<?php echo base_url('/Formularios/PreRegistro'); ?>">Registrarse</a>
               </div>
               <ul class="main-nav nav navbar-nav navbar-right">
                 <li class="wow fadeInDown" data-wow-delay="0s"><a class="active" href="<?php echo base_url('/Home'); ?>">Inicio</a></li>

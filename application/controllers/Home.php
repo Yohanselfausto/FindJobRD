@@ -51,4 +51,21 @@ public function Ayuda(){
   $this->load->view('Templates/Ayuda');
   $this->load->view('Templates/Footer');
 }
+
+public function RegistrarEmpleo()
+{
+    $this->load->view('Templates/Header');
+    $this->load->view('Templates/RegistrarEmpleo');
+    $this->load->view('Templates/Footer');
+
+}
+
+public function RegistrarCurriculum()
+{
+    $this->load->view('Templates/Header');
+    $this->load->view('Templates/RegistrarCurriculum');
+    $this->load->view('Templates/Footer');
+
+}
+
 }
